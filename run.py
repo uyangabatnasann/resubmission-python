@@ -15,3 +15,23 @@ while True:
     computer = random.choice(options)
     # Prints what players have chosen
     print(f"You have chosen -> {player} <-\nComputer have chosen ->{computer}<-")
+    # Game logic
+    if player == computer:
+        print(f"Both players have chosen ->{player}<----IT IS A DRAW!---")
+    elif player == "rock":
+        if computer == "scissors":
+            print("ROCK SMASHES SCISSORS!---YOU WIN!---")
+        else:
+            print("PAPER COVERS ROCK!---YOU LOSE!---")
+    elif player == "paper":
+        if computer == "rock":
+            print("PAPER COVERS ROCK!---YOU WIN!---")
+        else:
+            print("SCISSORS CUTS PAPER!---YOU LOSE!---")  
+    elif player == "scissors":
+        if computer == "paper":
+            print("SCISSORS CUTS PAPER!---YOU WIN!")
+        else:
+            print("ROCK SMASHES SCISSORS!---YOU LOSE!---")
+    else:
+        print("SORRY, INLVALID ENTRY---YOU LOSE---")                                      
