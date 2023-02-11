@@ -11,3 +11,5 @@ options = ["rock", "paper", "scissors"]
 while True:
     # Gets input from an user
     player = input("Enter your choice ( Rock, Paper, Scissors): ")
+    # Creates a random choice from an option list to play against an user
+    computer = random.choice(options)
