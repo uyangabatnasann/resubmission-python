@@ -13,3 +13,5 @@ while True:
     player = input("Enter your choice ( Rock, Paper, Scissors): ")
     # Creates a random choice from an option list to play against an user
     computer = random.choice(options)
+    # Prints what players have chosen
+    print(f"You have chosen -> {player} <-\nComputer have chosen ->{computer}<-")
