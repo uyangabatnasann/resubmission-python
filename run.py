@@ -34,4 +34,9 @@ while True:
         else:
             print("ROCK SMASHES SCISSORS!---YOU LOSE!---")
     else:
-        print("SORRY, INLVALID ENTRY---YOU LOSE---")                                      
+        print("SORRY, INLVALID ENTRY---YOU LOSE---")
+
+    # Creates a new game    
+    new_game = input("Start New Game? (y/n): ")
+    if new_game.lower() != "y":
+        break    
