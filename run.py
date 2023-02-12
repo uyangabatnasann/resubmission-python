@@ -4,13 +4,15 @@
 
 # Creates random choice for computer
 import random
-
+print("-----------------------------------")
+print("Welcome to Rock Paper Scissors Game")
+print("-----------------------------------")
 # Creates a list of possible options for a game
 options = ["rock", "paper", "scissors"]
 
 while True:
     # Gets input from an user
-    player = input("Enter your choice ( Rock, Paper, Scissors): ")
+    player = input("Enter your choice ( rock, paper, scissors): ")
     # Creates a random choice from an option list to play against an user
     computer = random.choice(options)
     # Prints what players have chosen
