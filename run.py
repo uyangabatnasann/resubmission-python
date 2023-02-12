@@ -12,11 +12,11 @@ options = ["rock", "paper", "scissors"]
 
 while True:
     # Gets input from an user
-    player = input("Enter your choice ( rock, paper, scissors): ")
+    player = input("Enter your choice ( rock, paper, scissors): \n")
     # Creates a random choice from an option list to play against an user
     computer = random.choice(options)
     # Prints what players have chosen
-    print(f"You have chosen -> {player} <-\nComputer have chosen ->{computer}<-")
+    print(f"You have chosen -> {player} <-Computer have chosen ->{computer}<-")
     # Game logic
     if player == computer:
         print(f"Both players have chosen ->{player}<----IT IS A DRAW!---")
@@ -39,6 +39,6 @@ while True:
         print("SORRY, INLVALID ENTRY---YOU LOSE---")
 
     # Creates a new game    
-    new_game = input("Start New Game? (y/n): ")
+    new_game = input("Start New Game? (y/n): \n")
     if new_game.lower() != "y":
         break    
